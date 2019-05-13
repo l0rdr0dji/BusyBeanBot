@@ -1,0 +1,7 @@
+discord
+asyncio
+Pymoe
+time
+random
+pip
+youtube_dl
