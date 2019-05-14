@@ -1,1 +1,1 @@
-worker: python bot.py
+worker: Busy beam bot2.py
