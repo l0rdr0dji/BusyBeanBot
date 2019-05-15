@@ -21,7 +21,7 @@ async def on_member_join(member):
     print('Sent message to ' + member.name)
 
 
-@client.event
+@bot.event
 async def on_message(message):
     if message.content == '+sessions':
         await client.send_message(message.channel,'#session-announcements')
