@@ -1,4 +1,2 @@
 discord.py
-asyncio
-Pymoe
-youtube_dl
+
