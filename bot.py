@@ -7,7 +7,7 @@ import random
 import os
 
 client = discord.Client()
-client = commands.Bot(command_prefix = '!')
+bot = commands.Bot(command_prefix = "!")
 
 
 @bot.event
