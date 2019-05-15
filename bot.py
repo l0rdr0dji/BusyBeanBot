@@ -8,7 +8,7 @@ import os
 
 client = discord.Client()
 client = commands.Bot(command_prefix = '!')
-Clientdiscord = discord.Client()
+
 
 @bot.event
 async def on_ready():
