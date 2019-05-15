@@ -4,7 +4,7 @@ from discord.ext import commands
 import asyncio
 import time
 import random
-from discord import Game
+Import os
 
 
 Client = discord.client
