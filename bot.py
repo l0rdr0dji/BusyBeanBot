@@ -12,14 +12,14 @@ client = commands.Bot(command_prefix = '!')
 Clientdiscord = discord.Client()
 
 @bot.event
-@client.event
+async def on_ready():
+    await client.change_presence(game=Game(name='Version 0.1 is now up!'))
+    print('Ready, Freddy') 
+@bot.event
 async def on_member_join(member):
     await client.change_presence(game=Game(name='Version 0.1 is now up!'))
     await client.send_message(member, 'Hello! Welcome to the Busy Bean Cafe discord server! I am the bot for this server. Please make sure to verify and read the rules before chatting!')
     print('Sent message to ' + member.name)
-async def on_ready():
-    await client.change_presence(game=Game(name='Version 0.1 is now up!'))
-    print('Ready, Freddy') 
 
 
 @client.event
