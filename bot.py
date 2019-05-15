@@ -11,7 +11,7 @@ Client = discord.client
 client = commands.Bot(command_prefix = '!')
 Clientdiscord = discord.Client()
 
-
+@bot.event
 @client.event
 async def on_member_join(member):
     await client.change_presence(game=Game(name='Version 0.1 is now up!'))
