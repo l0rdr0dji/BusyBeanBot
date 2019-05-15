@@ -1,6 +1,5 @@
 discord.py
 asyncio
 Pymoe
-time
 random
 youtube_dl
