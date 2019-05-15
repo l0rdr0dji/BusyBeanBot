@@ -42,4 +42,4 @@ async def on_message(message):
         em = discord.Embed(description='Here are the commands.')
         em.set_image(url='https://cdn.discordapp.com/attachments/535622552345903115/577634941022765058/unknown.png')
         await client.send_message(message.channel, embed=em)
-client.run(str(os.environ.get('token')))
+bot.run(os.environ['token])
