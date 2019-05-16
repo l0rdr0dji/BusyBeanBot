@@ -22,9 +22,9 @@ async def on_member_join(member):
 
 
 @bot.command()
-async def on_message(message):
-    if message.content == '+sessions':
-        await client.send_message(message.channel,'#session-announcements')
+async def sessions(ctx):
+sessions=ctx.guild.get_channel(536642336407683082)
+  await client.send_message(f'please check out {sessions.mention} for more information')                        
     if message.content == '+applications':
         await client.send_message(message.channel,'Check group games for our application center!')
     if message.content == '+Kurt':
